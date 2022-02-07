@@ -1,7 +1,11 @@
 print("ez whitelist and blacklist system")
 
 --whitelist--
-local chadwhitelist = {}
+local chadwhitelist = {
+    1335048990,
+    3144845606,
+    
+}
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
 end
