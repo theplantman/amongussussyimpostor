@@ -12,7 +12,7 @@ local chadwhitelist = {
     1575837438
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
-    game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
+    game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
 end
 if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
     print("whitelist pass")
@@ -56,5 +56,5 @@ local ezeznub = {
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
-    game:GetService("Players").LocalPlayer:Kick("ez get blacklist",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
+    game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
