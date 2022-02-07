@@ -14,10 +14,10 @@ if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) t
     game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
 end
 if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
-    print("whitelisted")
+    print("whitelist1 pass")
 end
 if game:GetService("Players").LocalPlayer:IsInGroup(3735330) then
-    print("whitelisted")
+    print("whitelist2 pass")
     else
     game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
 end
