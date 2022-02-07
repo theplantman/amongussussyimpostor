@@ -18,7 +18,8 @@ local chadwhitelist = {
     1562829000,
     1230082431,
     2889142801,
-    438976779
+    438976779,
+    605143160
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
@@ -29,38 +30,8 @@ end
 
 --blacklist--
 local ezeznub = {
-    [1738619838] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [330780718] = {
-        ["reason"] = "ez get blacklist"
-    }; 
-    [401818886] = {
-        ["reason"] = "ez get blacklist"
-    }; 
     [1051207945] = {
-        ["reason"] = "ez get blacklist killua ur trash skid"
-    };
-    [640212760] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [1082209461] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [3155060602] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [1908190065] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [695065009] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [1779641908] = {
-        ["reason"] = "ez get blacklist"
-    };
-    [175635875] = {
-        ["reason"] = "ez get blacklist"
+        ["reason"] = "listen here ya skid you cant escape my blacklist and whitelist system"
     };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
