@@ -1,0 +1,62 @@
+print("ez whitelist and blacklist system")
+
+--whitelist--
+local chadwhitelist = {
+    1797239370,
+    2225077638,
+    1220272521,
+    2686500207,
+    2779814696
+}
+if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
+    game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
+end
+if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
+    print("whitelisted")
+end
+if game:GetService("Players").LocalPlayer:IsInGroup(3735330) then
+    print("whitelisted")
+    else
+    game:GetService("Players").LocalPlayer:Kick("ez no whitelist")
+end
+
+--blacklist--
+local ezeznub = {
+    [1738619838] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [330780718] = {
+        ["reason"] = "ez get blacklist"
+    }; 
+    [401818886] = {
+        ["reason"] = "ez get blacklist"
+    }; 
+    [1051207945] = {
+        ["reason"] = "ez get blacklist killua ur trash"
+    };
+    [640212760] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [1082209461] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [3155060602] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [1908190065] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [695065009] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [1779641908] = {
+        ["reason"] = "ez get blacklist"
+    };
+    [175635875] = {
+        ["reason"] = "ez get blacklist"
+    };
+}
+local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
+if nubcheck then
+    game:GetService("Players").LocalPlayer:Kick("ez get blacklist",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
+end
