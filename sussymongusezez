@@ -65,10 +65,10 @@ end
 --blacklist--
 local ezeznub = {
     [1051207945] = {
-        ["reason"] = "listen here ya skid you cant escape my blacklist and whitelist system"
+        ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
     };
     [243942975] = {
-        ["reason"] = "listen here ya skid you cant escape my blacklist and whitelist system"
+        ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
     };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
