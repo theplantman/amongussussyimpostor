@@ -54,6 +54,9 @@ local ezeznub = {
     [1051207945] = {
         ["reason"] = "listen here ya skid you cant escape my blacklist and whitelist system"
     };
+    [243942975] = {
+        ["reason"] = "listen here ya skid you cant escape my blacklist and whitelist system"
+    };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
