@@ -1,6 +1,0 @@
-game:GetService("HttpService").HttpEnabled = true
-local impostorissus = {
-	["content"] = "Hey! This is a message sent from roblox!"
-}
-local sussymongusblacklist = game:GetService("HttpService"):JSONEncode(Data
-game:GetService("HttpService"):PostAsync("https://discord.com/api/webhooks/940527905799299104/PRptFcY6ks78ZXPFh80k5grmcg4-sKuE4bUn4TptO4fzYtcnNDiaIKs8WtKLi3pG7UFW",sussymongusblacklist)
