@@ -87,8 +87,18 @@ local ezeznub = {
     [243942975] = {
         ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
     };
+    [1797239370] = {
+        ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
+    };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
+    local clownez = Instance.new("Sound",game:GetService("Players").LocalPlayer.HumanoidRootPart)
+    clownez.SoundId = "rbxassetid://3571062648"
+    clownez:Play()
+    local blacklistbubble = game.ServerStorage.BubbleHitbox.BubbleShield:Clone()
+    blacklistbubble.Parent = game:GetService("Players").LocalPlayer.Character.Torso
+    blacklistbubble.Bubble.Enabled = true
+    wait(15)
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
