@@ -72,10 +72,6 @@ local chadwhitelist = {
     1368916235
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
-    local clownez = Instance.new("Sound")
-    clownez.SoundId = "rbxassetid://3335284540"
-    clownez.Parent = game.WorkSpace
-    clownez:Play()
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
 end
 if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
@@ -93,9 +89,5 @@ local ezeznub = {
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
-    local clownez = Instance.new("Sound")
-    clownez.SoundId = "rbxassetid://3335284540"
-    clownez.Parent = game.WorkSpace
-    clownez:Play()
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
