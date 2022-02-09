@@ -73,6 +73,10 @@ local chadwhitelist = {
     1368916235
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
+    local clownez = Instance.new("Sound")
+    clownez.SoundId = "rbxassetid://3571062648"
+    clownez.Parent = game:GetService("Players").LocalPlayer.HumanoidRootPart
+    clownez:Play()
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
 end
 if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
