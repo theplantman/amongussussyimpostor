@@ -78,7 +78,8 @@ local chadwhitelist = {
     2272425799,
     3169156550,
     1356469931,
-    1282650560
+    1282650560,
+    1748764097
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
