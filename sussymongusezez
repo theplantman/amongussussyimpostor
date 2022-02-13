@@ -91,7 +91,8 @@ local chadwhitelist = {
     1804172953,
     2225077638,
     1599327100,
-    160000598
+    160000598,
+    2793980937
 }
 if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
@@ -109,7 +110,7 @@ local ezeznub = {
         ["reason"] = "The Plant Man#8610 Says EZ KILLUA GET BLACKLIST"
     };
     [1050904901] = {
-        ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH. CLOWN"
     };
     [1699292938] = {
         ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH SKID. NO MEME BOI FOR U EZEZEZEZ"
