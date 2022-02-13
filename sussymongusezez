@@ -115,6 +115,9 @@ local ezeznub = {
     [1699292938] = {
         ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH SKID. NO MEME BOI FOR U EZEZEZEZ"
     };
+    [2698263776] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING MEME BOY SKID. NOW GO TOUCH GRASS BOZO"
+    };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
