@@ -109,6 +109,9 @@ local ezeznub = {
     [1050904901] = {
         ["reason"] = "The Plant Man#8610 Says EZ GET BLACKLIST"
     };
+    [1699292938] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH SKID. NO MEME BOI FOR U EZEZEZEZ"
+    };
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
