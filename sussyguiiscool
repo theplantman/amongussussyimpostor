@@ -1,3 +1,4 @@
+local MemeBoyGuiVal = 0
 local MemeBoyGui = Instance.new("ScreenGui")
 local MemeBoyOpenGui = Instance.new("TextButton")
 local MemeBoyMoveSetGui = Instance.new("ScreenGui")
@@ -86,5 +87,11 @@ m4.Text = "Y - UpperCut"
 m4.TextColor3 = Color3.fromRGB(0, 0, 0)
 m4.TextSize = 20.000
 MemeBoyOpenGui.MouseButton1Down:Connect(function()
-	f1.Visible = true
+    MemeBoyGuiVal = MemeBoyGuiVal +1
+    if MemeBoyGuiVal == 1 then
+	    f1.Visible = true
+    end
+    if MemeBoyGuiVal == 2 then
+        f1.Visible = false
+    end
 end)
