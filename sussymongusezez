@@ -124,7 +124,7 @@ if not table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) t
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No WhiteList")
 end
 if table.find(chadwhitelist,game:GetService("Players").LocalPlayer.UserId) then
-    print("u a giga chad u passed the whitelist check")
+    print("u a giga chad u passed the whitelist check 1")
 end
 
 --blacklist--
