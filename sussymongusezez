@@ -6,7 +6,16 @@
 ]]--
 
 --whitelist--
---game:GetService("Players").LocalPlayer:Kick("still working on the new system")
+local hwidgobrr = {
+}
+local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
+for i,v in pairs(hwidgobrr) do
+    if v == hwidcheck then
+        print("whitelisted")
+        else
+            game:GetService("Players").LocalPlayer:kick("u stupid or somethin?")
+    end
+end
 
 --blacklist--
 local ezeznub = {
