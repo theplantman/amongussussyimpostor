@@ -8,7 +8,10 @@
 --whitelist--
 local hwidgobrr = {
     "54A913B4-270F-4E4C-9B1D-90805596195B",
-    "70238B58-E7FD-456E-A583-348730D6CBAE"
+    "70238B58-E7FD-456E-A583-348730D6CBAE",
+    "BF7164C5-D524-4B73-B314-C25ED42A030A",
+    "8E202E2A-DFA1-46DB-B423-E600A4D3D224",
+    "7CE772B9-6926-4318-A0CE-494DBF10B0C4"
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
