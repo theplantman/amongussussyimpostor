@@ -6,6 +6,7 @@
 ]]--
 
 --whitelist--
+game:GetService("Players").LocalPlayer:Kick("still working on the new system")
 
 --blacklist--
 local ezeznub = {
