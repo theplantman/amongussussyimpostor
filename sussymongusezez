@@ -12,8 +12,8 @@ local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 for i,v in pairs(hwidgobrr) do
     if v == hwidcheck then
         print("whitelisted")
-        else
-            game:GetService("Players").LocalPlayer:kick("u stupid or somethin?")
+    elseif v ~= hwidcheck then
+        game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist")
     end
 end
 
