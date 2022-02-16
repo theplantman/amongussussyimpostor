@@ -11,13 +11,10 @@ local hwidgobrr = {
     "70238B58-E7FD-456E-A583-348730D6CBAE"
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
-for i,v in pairs(hwidgobrr) do
-    if v == hwidcheck then
+    if not find.table ==  then
         print("whitelisted")
-    elseif v ~= hwidcheck then
         game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist")
     end
-end
 
 --blacklist--
 local ezeznub = {
