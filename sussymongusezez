@@ -4,6 +4,23 @@
     
     kur_Dev#3557 - whitelister
 ]]--
+--[[WhiteList Tutorial
+    1.u go to inside local chadwhitelist
+    2.go down to the last id example:
+        3232
+        1 -- last id
+    3.before you put the id first put a comma = , to the last id there example:
+        1.234235 -- the last id,
+        1232451 -- the new id
+        2.234235,
+        123451
+        3.234235,
+        123451
+        2434717 -- the new id
+        4..234235,
+        123451,
+        2434717
+]]--
 
 --whitelist--
 local chadwhitelist = {
