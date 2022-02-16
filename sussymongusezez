@@ -129,4 +129,3 @@ local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
---script logs--
