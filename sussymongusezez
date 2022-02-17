@@ -18,7 +18,8 @@ local hwidgobrr = {
     "B59E2D19-4B33-412D-86B5-EEBA76607609",
     "438D42E9-092F-476F-A4C1-CFEC77E0543E",
     "668EF9B0-44DB-4188-8A15-0FD09C7E7232",
-    "9E12CB67-95E5-4299-BDF2-1CA81BCAD0BA"
+    "9E12CB67-95E5-4299-BDF2-1CA81BCAD0BA",
+    "52F1CF23-5ECD-48B7-BF0F-E029553E0E93"
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
