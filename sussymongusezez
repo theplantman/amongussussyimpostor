@@ -12,7 +12,8 @@
 
 --whitelist--
 local hwidgobrr = {
-    "54A913B4-270F-4E4C-9B1D-90805596195B" --886431466186240000
+    "54A913B4-270F-4E4C-9B1D-90805596195B", --886431466186240000
+    "C97182BF-F931-4F5D-ADB0-89EC3618606C" --833248956360294400
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
@@ -42,7 +43,7 @@ if nubcheck then
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
 local bitchgobl = {
-    "8EDBFC4C-5536-4128-A7BD-AD49D2B99283"
+    "8EDBFC4C-5536-4128-A7BD-AD49D2B99283" --897008764996157530
 }
 local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
 if table.find(bitchgobl,blcheckuwu) then
