@@ -46,6 +46,7 @@ local ezeznub = {
     };
     [3056674584] = {
         ["reason"] = "bollsman123#4759 Says IMAGINE ABUSING SOH EZ KID"
+    }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
