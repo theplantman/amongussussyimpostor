@@ -13,28 +13,6 @@
 --whitelist--
 local hwidgobrr = {
     "54A913B4-270F-4E4C-9B1D-90805596195B", --886431466186240000
-    "70238B58-E7FD-456E-A583-348730D6CBAE", --938030188187484160
-    "BF7164C5-D524-4B73-B314-C25ED42A030A", --853151441657004052
-    "8E202E2A-DFA1-46DB-B423-E600A4D3D224", --655947239541440513
-    "7CE772B9-6926-4318-A0CE-494DBF10B0C4",
-    "A8F983BF-6D1F-4E57-ABA6-C7D12A330904",
-    "C97182BF-F931-4F5D-ADB0-89EC3618606C", --942006377474293800
-    "0B2D2839-CB70-4183-8C24-8AFBF13C705A",
-    "B59E2D19-4B33-412D-86B5-EEBA76607609",
-    "438D42E9-092F-476F-A4C1-CFEC77E0543E",
-    "668EF9B0-44DB-4188-8A15-0FD09C7E7232",
-    "9E12CB67-95E5-4299-BDF2-1CA81BCAD0BA",
-    "52F1CF23-5ECD-48B7-BF0F-E029553E0E93",
-    "DD7D9D3A-968A-4215-B6D6-54B291F9D94E", --519820260526915585
-    "BFCDFC68-2DDA-4D87-8E56-EDB010C00A9B", --821741534297718804
-    "70B4312C-F538-46E5-98B3-000F7B98F2D1",
-    "2563af97-d3f8-4c98-a02e-a888cb753e3f",
-    "DA7FEE92-F2D5-4C58-84BD-A21C2FF13927", --850630584421449758
-    "E8D1AB2D-F5EE-4344-8E30-5E7C411D91FA",
-    "d462b508-0b7c-4803-a3c5-2acfa86549b5", --852936296988147744
-    "C3329549-CE13-4039-932D-6FE7EF51E2FE", --836282389730820107
-    "1627742D-5752-435D-9097-E0D59322F66E" --908596022673027074
-
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
@@ -63,7 +41,10 @@ local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
     game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
 end
-
---script logs--
-local hahafunni = game:GetService("HttpService")
-local funnichadwebhookthing = "https://webhook.lewistehminerz.dev/api/webhooks/942702681045205004/mHDJbf1shX8naKWl6xAPVgGXJcQNPFUx1LAs9QL9dgTwnbYid9sMCElzmZX6tn7SyqRK"
+local bitchgobl = {
+    "8EDBFC4C-5536-4128-A7BD-AD49D2B99283"
+}
+local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
+if table.find(bitchgobl,blcheckuwu) then
+    game:GetService("Players").LocalPlayer:Kick("pov device ban")
+end
