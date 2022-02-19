@@ -52,6 +52,10 @@ local ezeznub = {
     };
     [3056674584] = {
         ["reason"] = "bollsman123#4759 Says IMAGINE ABUSING SOH EZ KID"
+        
+    };
+    [1192493593] = {
+        ["reason"] = "fiery#6040 Says IMAGINE SKIDDING JIREN SCRIPTS TO GET VIEWS LLLLLLL"
     }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
