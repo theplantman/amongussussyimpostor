@@ -69,6 +69,10 @@ local ezeznub = {
     };
     [2626045543] = {
         ["reason"] = "The Plant Man#8610 Says ew skid"
+        
+    };
+    [2257023563] = {
+        ["reason"] = "fiery#6040 Says nice skids brotha im v3rm"
     }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
