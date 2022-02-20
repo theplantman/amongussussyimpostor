@@ -63,6 +63,12 @@ local ezeznub = {
     };
     [1192493593] = {
         ["reason"] = "fiery#6040 Says IMAGINE SKIDDING JIREN SCRIPTS TO GET VIEWS LLLLLLL"
+    };
+    [2893071996] = {
+        ["reason"] = "The Plant Man#8610 Says wow"
+    };
+    [2626045543] = {
+        ["reason"] = "The Plant Man#8610 Says ew skid"
     }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
