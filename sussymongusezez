@@ -21,7 +21,7 @@ local hwidgobrr = {
     "B6502ED9-B86A-4781-9F5D-82709830D689", --609927712601276451
     "C093B59C-C872-4171-87A5-066D0574C86E", --909587680055156756
     "BFCDFC68-2DDA-4D87-8E56-EDB010C00A9B", --945567986612305931
-    *AF08D936-A6AC-47B8-BD98-DE450FB94893", --783199928272683008
+    "AF08D936-A6AC-47B8-BD98-DE450FB94893", --783199928272683008
     "1627742D-5752-435D-9097-E0D59322F66E", --908596022673027074
     "19750C91-E1BB-4D80-8134-FDFAC5528227", --709289547623563335
     "A6FD76C4-FF2E-48A8-A94E-7A43082966A9", --944417052964315136
@@ -77,4 +77,10 @@ local bitchgobl = {
 local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
 if table.find(bitchgobl,blcheckuwu) then
     game:GetService("Players").LocalPlayer:Kick("pov device ban")
+end
+if game:GetService("Players").LocalPlayer:IsFriendsWith(1051207945) then
+    game:GetService("Players").LocalPlayer:Kick("ew friends with a skid")
+end
+if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
+    game:GetService("Players").LocalPlayer:Kick("ew a skid")
 end
