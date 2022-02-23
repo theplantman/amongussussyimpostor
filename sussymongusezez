@@ -88,10 +88,7 @@ local ezeznub = {
     [2257023563] = {
         ["reason"] = "fiery#6040 Says nice skids brotha im v3rm"
             
-     };
-    [634947453] = {
-        ["reason"] = "fiery#6040 Says ok go die"
-    }
+     }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
 if nubcheck then
