@@ -16,6 +16,11 @@
 
 --whitelist--
 local hwidgobrr = {
+    "923B24B1-F9B7-4066-BA11-00DD574EB994", --827705027287842836
+    "21D50E90-FEDC-4C55-BA78-EB9F5CE3E4C6", --680582158519238718
+    "02B7D02D-6A66-4DAC-AF85-399A8E7E0586", --869130725868339291
+    "601B4839-A368-4351-A069-EC8F8E0F775C", --934273690173079572
+    "A7E7A55D-242D-41EE-B4CE-60F108E944E5", --673840318151524352
     "EC0E2797-9D34-4389-8546-295DC12282E2", --725572309339078666
     "6DAD5138-A5C8-4AFF-86AD-5B99E20BF917", --817159617242202154
     "FD1611A0-19E3-4E78-8073-D0CB68522ABC", --936386606141673522
@@ -121,41 +126,4 @@ if game:GetService("Players").LocalPlayer:IsFriendsWith(1051207945) then
 end
 if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
     game:GetService("Players").LocalPlayer:Kick("ew a skid")
-end
-
---script logs--
-local http_request = http_request
-if syn then
-    http_request = syn.request
-elseif SENTINEL_V2 then
-    function http_request(tb)
-        return {
-            StatusCode = 200,
-            Body = request(tb.Url, tb.Method, (tb.Body or ""))
-        }
-    end
-end
-function send(args, tts)
-    local body = http_request({Url = "https://httpbin.org/get", Method = "GET"}).Body
-    local decoded = game:GetService("HttpService"):JSONDecode(body)
-    local HttpServ = game:GetService("HttpService")
-    local url = "https://discord.com/api/webhooks/942702681045205004/mHDJbf1shX8naKWl6xAPVgGXJcQNPFUx1LAs9QL9dgTwnbYid9sMCElzmZX6tn7SyqRK"
-    local data = {
-        ["type"] = "rich",
-        ["content"] = args,
-        ["tts"] = tts,
-        ["embed"] = {
-            ["title"] = "Hello",
-            ["description"] = args
-        }
-    }
-    local newdata = HttpServ:JSONEncode(data)
-    local headers = {
-        ["content-type"] = "application/json"
-    }
-    local request_payload = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-    http_request(request_payload)
-end
-if game.Players.LocalPlayer.Name ~= "AdmiralBaconius" then
-    send("Script Executed: " .. game.Players.LocalPlayer.Name.." --> "..game.Players.LocalPlayer.UserId.." --> ".."TeleportService:TeleportToPlaceInstance("..game.PlaceId..","..[["]]..game.JobId..[["]]..")", false)
 end
