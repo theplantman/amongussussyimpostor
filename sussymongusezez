@@ -1,6 +1,5 @@
 --Made By The Plant Man#8610--
 --[[Credits To
-test
     bollsman123#4759 - senior whitelister,
     
     fiery#6040 - smol pp whitelister,
@@ -72,6 +71,7 @@ local hwidgobrr = {
     "94A3A370-BF05-4985-9612-4D28D5386C99", --796849685078999100
     "3EF32FEF-B755-4881-9014-B41D135D6704", --783199928272683008
     "299798EB-1698-41FE-B2C2-2942714DD17B", --665988422091014221
+    "1785D8BC-B8B9-49F8-B52A-7736AAFC4BFF", --947372192822362175
     "93701EA8-44E6-4AC1-9D12-DFB5FB7C462E" --722181754173128835
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
