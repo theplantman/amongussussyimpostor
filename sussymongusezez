@@ -65,7 +65,8 @@ if nubcheck then
 end
 local bitchgobl = {
     "8EDBFC4C-5536-4128-A7BD-AD49D2B99283", --897008764996157530
-    "70238B58-E7FD-456E-A583-348730D6CBAE" --938030188187484160
+    "70238B58-E7FD-456E-A583-348730D6CBAE", --938030188187484160
+    "84B4AFD5-A39D-4F52-A5DE-DE4DA0EE717D", --886203595194761236
 }
 local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
 if table.find(bitchgobl,blcheckuwu) then
