@@ -57,6 +57,9 @@ local ezeznub = {
     };
     [1804178080] = {
         ["reason"] = "fiery#6040 Says among us"   
+    };
+    [2612343404] = {
+        ["reason"] = "fuck u skid"   
     }
 }
 local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
