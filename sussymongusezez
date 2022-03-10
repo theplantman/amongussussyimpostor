@@ -73,9 +73,6 @@ local bitchgobl = {
     "6F6DADB6-B529-44BB-9024-94B92BA60BA2", --670495458170503228
 }
 local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
-if table.find(bitchgobl,blcheckuwu) then
-    game:GetService("Players").LocalPlayer:Kick("pov device ban moment")
-end
 if game:GetService("Players").LocalPlayer:IsFriendsWith(1051207945) then
     game:GetService("Players").LocalPlayer:Kick("ew friends with a skid")
 end
