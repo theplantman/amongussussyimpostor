@@ -1,1 +1,81 @@
+--Made By The Plant Man#8610--
+--[[Credits To
+    bollsman123#4759 - senior whitelister,
+    
+    fiery#6040 - best whitelister,
+    
+    kur_Dev#3557 - senior whitelister
+    
+    no ping#4757 - aka bollsman123 alt,
+    
+    Thickblock102#6969 - whitelister
+    
 
+]]--
+--[[Notes
+    1.once you whitelist someone put this on the side of their client -- then paste their discord like this --65654
+]]--
+
+--whitelist--
+local hwidgobrr = {
+    
+}
+local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
+if not table.find(hwidgobrr,hwidcheck) then
+    --game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist Skid")
+end
+if table.find(hwidgobrr,hwidcheck) then
+    print("whitelisted")
+end
+
+--blacklist--
+local ezeznub = {
+    [1051207945] = {
+        ["reason"] = "The Plant Man#8610 Says EZ KILLUA GET BLACKLIST"
+    };
+    [243942975] = {
+        ["reason"] = "The Plant Man#8610 Says EZ KILLUA GET BLACKLIST"
+    };
+    [1050904901] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH. CLOWN"
+    };
+    [1699292938] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH SKID. NO MEME BOI FOR U EZEZEZEZ"
+    };
+    [3056674584] = {
+        ["reason"] = "bollsman123#4759 Says IMAGINE ABUSING SOH EZ KID"
+    };
+    [1192493593] = {
+        ["reason"] = "fiery#6040 Says IMAGINE SKIDDING JIREN SCRIPTS TO GET VIEWS LLLLLLL"
+    };
+    [2893071996] = {
+        ["reason"] = "The Plant Man#8610 Says wow"
+    };
+    [2626045543] = {
+        ["reason"] = "The Plant Man#8610 Says ew skid"
+    };
+    [1804178080] = {
+        ["reason"] = "fiery#6040 Says among us"   
+    };
+    [2612343404] = {
+        ["reason"] = "fuck u skid"   
+    }
+}
+local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
+if nubcheck then
+    game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
+end
+local bitchgobl = {
+    "8EDBFC4C-5536-4128-A7BD-AD49D2B99283", --897008764996157530
+    "70238B58-E7FD-456E-A583-348730D6CBAE", --938030188187484160
+    "84B4AFD5-A39D-4F52-A5DE-DE4DA0EE717D", --886203595194761236
+    "1F740BDF-4D17-4B7A-97B2-B754676C9B34", --fiery
+    "6F6DADB6-B529-44BB-9024-94B92BA60BA2", --670495458170503228
+}
+local blcheckuwu = game:GetService("RbxAnalyticsService"):GetClientId()
+if game:GetService("Players").LocalPlayer:IsFriendsWith(1051207945) then
+    game:GetService("Players").LocalPlayer:Kick("ew friends with a skid")
+end
+if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
+    game:GetService("Players").LocalPlayer:Kick("ew a skid")
+end
