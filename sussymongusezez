@@ -12,13 +12,10 @@
     
 
 ]]--
---[[Notes
-    1.once you whitelist someone put this on the side of their client -- then paste their discord like this --65654
-]]--
 
 --whitelist--
 local hwidgobrr = {
-    54A913B4-270F-4E4C-9B1D-90805596195B
+    54A913B4-270F-4E4C-9B1D-90805596195B --The Plant Man#8610
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
