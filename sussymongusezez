@@ -29,9 +29,11 @@ local hwidgobrr = {
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
-    while true do
-        print("game crashed get nub")
-    end
+    spawn(function()
+        while true do
+            print("game crashed get nub")
+        end
+    end)
     game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist Skid")
 end
 if table.find(hwidgobrr,hwidcheck) then
