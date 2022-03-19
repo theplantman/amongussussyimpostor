@@ -1,7 +1,1 @@
-local httpiscul = game:GetService("HttpService")
-local culurl = "https://webhook.lewistehminerz.dev/api/webhooks/942702681045205004/mHDJbf1shX8naKWl6xAPVgGXJcQNPFUx1LAs9QL9dgTwnbYid9sMCElzmZX6tn7SyqRK
-local omgculmessage = {
-    ['content'] = "bruh"
-}
-local omgpostinguwu = httpiscul:JSONEncode(omgculmessage)
-httpiscul:PostAsync(culurl,omgpostinguwu)
+
