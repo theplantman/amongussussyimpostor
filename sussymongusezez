@@ -31,8 +31,11 @@ local hwidgobrr = {
     "D6C15057-4ED4-49EE-B813-AACBD246B663", --Francis#1021
     "076B1544-B17A-4EFB-867D-EE88F051B09B", --Funxster#6969
     "7EDDBBD5-46AA-4F19-91E1-30112A4B8C19", --Exotic mag#6167
-    "AFFF604F-7CC0-4E4E-914C-3C447CC07CDF" --I have no idea
-    "F9189212-3E00-4A43-A977-C207FA59B6A7" --Prism#0001 the noob
+    "F9189212-3E00-4A43-A977-C207FA59B6A7", --Prism#0001
+    "513D9047-6B5B-4D2D-BBE4-567A41602BBB", --Fanabizzareday123#3422
+    "D0FB872C-07E5-48E5-88E9-16476F011E01", --eggen_cheese#2967
+    "6F19786A-7801-4A83-8F30-6EF4962AB2D9", --Ac-130#9862
+    "633803E4-00B9-4FCD-981C-0CA9F6B052A2" --mickey the mouse#6712
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
 if not table.find(hwidgobrr,hwidcheck) then
