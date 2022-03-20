@@ -38,7 +38,7 @@ local hwidgobrr = {
     "D0FB872C-07E5-48E5-88E9-16476F011E01", --eggen_cheese#2967
     "6F19786A-7801-4A83-8F30-6EF4962AB2D9", --Ac-130#9862
     "633803E4-00B9-4FCD-981C-0CA9F6B052A2", --mickey the mouse#6712
-    "94A3A370-BF05-4985-9612-4D28D5386C99", --FwyStormie#7731
+    "F97510BA-E4F5-432C-B1FB-C06CFC768269", --FwyStormie#7731
     "773ED454-0967-464F-9740-394974DA642B" --joe69420#8812
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
