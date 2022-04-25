@@ -7,5 +7,5 @@ local ce = coroutine;
 local cl = {
   "54A913B4-270F-4E4C-9B1D-90805596195B"
 };
-if not table.find(cl) then
+if not table.find(cl, cd) then
 end
