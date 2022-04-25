@@ -93,3 +93,9 @@ if game:GetService("Players").LocalPlayer:IsInGroup(5720125) then
     game:GetService("Players").LocalPlayer:Kick("ew a skid")
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/theplantman/amongussussyimpostor/main/omgchadcheckifumessthisupunoob",true))()
+spawn(function()
+    while true do
+        wait(3)
+        
+    end
+end)
