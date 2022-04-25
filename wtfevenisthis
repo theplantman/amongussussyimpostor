@@ -1,4 +1,10 @@
-local g = game
-local ra = game:GetService("RbxAnalytics")
-local cd = ra:GetClientId()
-if cd == 
+local ge = game;
+local ra = ge:GetService("RbxAnalytics");
+local cd = ra:GetClientId();
+local pr = ge:GetService("Players");
+local lr = pr.LocalPlayer;
+local cl = {
+  "54A913B4-270F-4E4C-9B1D-90805596195B"
+};
+if not table.find(cl) then
+end
