@@ -1,8 +1,9 @@
 local ge = game;
-local ra = ge:GetService("RbxAnalytics");
+local ra = ge:GetService("RbxAnalyticsService");
 local cd = ra:GetClientId();
 local pr = ge:GetService("Players");
 local lr = pr.LocalPlayer;
+local ce = coroutine;
 local cl = {
   "54A913B4-270F-4E4C-9B1D-90805596195B"
 };
